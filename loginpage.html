@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Masuk ke akunmu</h2>
+    <p>Gunakan username &amp; password akunmu.</p>
+    <p id="error-message" style="color: red; font-size: 14px; margin-bottom: 10px;"></p>
+
+    <form action="" method="POST">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <br />
+        <input type="text" id="username" name="username" required />
+      </div>
+
+      <br />
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <br />
+        <input type="password" id="password" name="password" required />
+      </div>
+
+      <br />
+
+      <button type="submit" id="submit-btn">Masuk</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
