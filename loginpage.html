@@ -8,15 +8,16 @@
 </head>
 <body>
   <div class="login-container">
-    <h2>Masuk ke akunmu</h2>
-    <p>Gunakan username &amp; password akunmu.</p>
+    <img class="logo" src="images/logo.png">
+    <h2>Log in to your account</h2>
+    <p>Use your account username &amp; password.</p>
     <p id="error-message" style="color: red; font-size: 14px; margin-bottom: 10px;"></p>
 
     <form action="" method="POST">
       <div class="form-group">
         <label for="username">Username</label>
         <br />
-        <input type="text" id="username" name="username" required />
+        <input type="text" id="username" name="username" placeholder="Enter your username" required />
       </div>
 
       <br />
@@ -24,12 +25,12 @@
       <div class="form-group">
         <label for="password">Password</label>
         <br />
-        <input type="password" id="password" name="password" required />
+        <input type="password" id="password" name="password" placeholder="Enter your password" required />
       </div>
 
       <br />
 
-      <button type="submit" id="submit-btn">Masuk</button>
+      <button type="submit" id="submit-btn">Log in</button>
     </form>
   </div>
 

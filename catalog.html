@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Catalog - Tumbas</title>
+    <link rel="stylesheet" href="catalog.css">
+    <script src="catalog.js" defer></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-search-container">
+            <input type="text" id="search-input" placeholder="🔍︎ Search products or category...">
+        </div>
+        <div class="nav-actions">
+            <div class="cart-badge-container">
+                <button id="btn-cart" class="btn-cart">
+                    🛒 <span id="cart-count">0</span>
+                </button>
+            </div>
+            <div class="user-info">
+                <span>Hello, <strong id="user-display-name">User</strong></span>
+                <button id="btn-logout" class="btn-logout">Log out</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="controls-bar">
+            <div class="filters">
+                <select id="category-filter">
+                    <option value="">All Categories</option>
+                </select>
+                <select id="sort-select">
+                    <option value="">Sort By</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="rating-desc">Rating: Highest</option>
+                    <option value="rating-asc">Rating: Lowest</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="error-banner" class="error-banner hidden">
+            <span id="error-msg"></span>
+            <button id="retry-fetch-btn">Retry</button>
+        </div>
+
+        <p class="status-line" id="status-line">Loading products…</p>
+        <div id="product-grid"></div>
+        <button id="load-more-btn" class="load-more hidden">Load More</button>
+    </main>
+
+    <div id="product-modal" class="modal hidden">
+        <div class="modal-content" id="modal-content">
+            <button id="close-modal-btn">Close</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="cart-drawer" id="cart-drawer" aria-label="Shopping cart">
+        <div class="cart-head">
+            <h2>My cart</h2>
+            <button id="close-cart-btn" aria-label="Close">✕</button>
+        </div>
+
+        <div id="cart-items"></div>
+
+        <div class="cart-footer">
+            <div class="cart-total-row">
+                <span>Total</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="clear-cart" id="clear-cart-btn">Clear cart</button>
+        </div>
+    </div>
+
+    <div id="toast"></div>
+</body>
+</html>

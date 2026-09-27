@@ -1,5 +1,14 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 200px;
+  padding: 0px;
+  margin: 0 auto;
+}
+
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: #f4f4f4;
   display: flex;
   justify-content: center;
@@ -13,11 +22,12 @@ body {
   width: 350px;
   padding: 30px;
   border: 1px solid #e0e0e0;
+  border-radius: 8px;
 }
 
 .login-container h2 {
   font-size: 28px;
-  color: #1a2b4c;
+  color: #233864;
   margin: 0 0 10px 0;
 }
 
@@ -39,21 +49,24 @@ body {
   border: 1px solid #dcdcdc;
   background-color: #fafafa;
   font-size: 14px;
+  border-radius: 8px;
 }
 
 .form-group input:focus {
-  border-color: #e59e37;
+  border-color: #070e40;
 }
 
 button {
   width: 100%;
   padding: 12px;
-  background-color: #e59e37;
-  color: #1a2b4c;
+  background-color: #242a55;
+  color: #ffffff;
   border: none;
   font-size: 16px;
+  border-radius: 8px;
+  margin: 0 ;
 }
 
 button:hover {
-  background-color: #d48d26;
+  background-color: #3f4576;
 }
