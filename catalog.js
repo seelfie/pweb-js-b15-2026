@@ -1,24 +1,11 @@
-// ====================================================
-// 1. PROTEKSI HALAMAN (AUTH GUARD) — poin 1, punya temenmu
-// ====================================================
-// TODO (poin 1): aktifin redirect ini kalau login.html sudah ada
-// if (!localStorage.getItem('user_firstname')) {
-//   window.location.href = 'login.html';
-// }
 const loggedInUser = localStorage.getItem('firstName') || 'User';
 
-// ====================================================
-// GLOBAL STATE
-// ====================================================
 let allProducts = [];
 let filteredProducts = [];
 const PAGE_LIMIT = 8;
 let currentDisplayCount = PAGE_LIMIT;
 let cart = JSON.parse(localStorage.getItem('cart_items')) || [];
 
-// ====================================================
-// SELEKSI ELEMEN DOM (id disamain ke index.html)
-// ====================================================
 const userDisplayName = document.getElementById('user-display-name');
 const btnLogout = document.getElementById('btn-logout');
 
